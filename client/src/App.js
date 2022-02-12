@@ -1,5 +1,12 @@
+import Container from "./components/Container";
+import { ChatProvider } from "./context/ChatContext";
+
 function App() {
-  return <div></div>;
+  return (
+    <ChatProvider>
+      <Container />
+    </ChatProvider>
+  );
 }
 
 export default App;
